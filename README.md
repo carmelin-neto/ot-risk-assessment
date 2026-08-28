@@ -1,6 +1,7 @@
 # Risk Assessment: OT/ICS Lab — Asset and Network Level
 
 **Type:** Formal risk assessment applying IEC 62443 risk methodology, sequenced from a single critical asset (the PLC) up to the full network architecture. Built as the analytical layer connecting the rest of the portfolio: [ot-purdue-model-mapping](https://github.com/carmelin-neto/ot-purdue-model-mapping) built the architecture, [ics-modbus-attack-testing](https://github.com/carmelin-neto/ics-modbus-attack-testing) proved specific attacks work, [ot-vulnerability-assessment](https://github.com/carmelin-neto/ot-vulnerability-assessment) found what's exposed — this document is where that evidence gets turned into prioritized decisions.
+The single-layer-control gap identified in the lateral movement threat here is addressed by [ot-access-control-design](https://github.com/carmelin-neto/ot-access-control-design), which supplies the second defense-in-depth layer.
 
 **Why asset-first, then network:** Risk assessments that start at the network level tend to produce generic findings ("the network should be segmented") that don't tell anyone what to fix first. Starting at the asset and working outward keeps every risk tied to a specific, real consequence before it gets generalized into an architectural recommendation.
 
